@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange rate app</title>
+    <script src="https://kit.fontawesome.com/fb79c194ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="head">
+            <h1>Exchange Rate App</h1>
+            <p>Sprawdź aktualne kursy walut!</p>
+        </div>
+        <div class="main">
+
+            <div class="ccyContainer">
+                <input class="ccy1" value="1" type="number"></input>
+                <select id="currencyOne">
+                    <option value="PLN">PLN</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="CHF">CHF</option>
+                    <option value="MXN">MEX</option>
+                    <option value="JPY">JPY</option>
+                </select>
+            </div>
+
+            <div class="btnContainer">
+                <button class="reverse"><i class="fa-sharp fa-solid fa-money-bill-transfer"></i></button>
+            </div>
+
+            <div class="ccyContainer">
+                <input class="ccy2" disabled></input>
+                <select id="currencyTwo">
+                    <option value="PLN">PLN</option>
+                    <option value="USD" selected>USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="CHF">CHF</option>
+                    <option value="MXN">MEX</option>
+                    <option value="JPY">JPY</option>
+                </select>
+            </div>
+        </div>
+        <p class="result">1PLN = 0.2553 USD</p>
+    </div>
+
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
